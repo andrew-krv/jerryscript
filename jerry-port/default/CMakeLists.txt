@@ -82,7 +82,7 @@ foreach(JERRY_PORT_LIBRARY_NAME ${JERRY_PORT_DEFAULT_NAME} ${JERRY_PORT_DEFAULT_
   target_include_directories(${JERRY_PORT_LIBRARY_NAME} PRIVATE ${INCLUDE_CORE_PUBLIC})
   target_include_directories(${JERRY_PORT_LIBRARY_NAME} PRIVATE ${INCLUDE_EXT_PUBLIC})
   target_compile_definitions(${JERRY_PORT_LIBRARY_NAME} PRIVATE ${DEFINES_PORT_DEFAULT})
-  target_link_libraries(${JERRY_PORT_LIBRARY_NAME} jerry-core) # FIXME: remove this dependency as soon as possible
+#   target_link_libraries(${JERRY_PORT_LIBRARY_NAME} jerry-core) # FIXME: remove this dependency as soon as possible
 endforeach()
 
 target_compile_definitions(${JERRY_PORT_DEFAULT_NAME}-minimal PRIVATE DISABLE_EXTRA_API)
